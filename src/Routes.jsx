@@ -1,6 +1,6 @@
-import {RouterProvider, createBrowserRouter} from 'react-router'
-import {Login} from './pages/Login'
-import {Dashboard} from './pages/Dashboard'
+import { RouterProvider, createBrowserRouter } from 'react-router'
+import { Login } from './pages/Login'
+import { Dashboard } from './pages/Dashboard'
 import { Navigate } from 'react-router';
 
 
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <Dashboard />,
   },
   {
-    path: '*', // rota coringa
+    path: '*',
     element: <Navigate to="/" replace />,
   },
 ]);
