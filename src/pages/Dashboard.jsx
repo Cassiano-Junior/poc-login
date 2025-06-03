@@ -13,7 +13,7 @@ export function Dashboard() {
       navigate('/')
     }
     
-  }, [navigate, loginData])
+  }, [navigate])
 
   return (
     <>
