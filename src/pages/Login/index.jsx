@@ -12,7 +12,7 @@ import {
 import { useCallback, useMemo, useEffect } from 'react'
 
 export function Login() {
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
 
   // const loginData = useMemo(() => {
   //     return JSON.parse(localStorage.getItem('loginData'))
