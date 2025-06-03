@@ -14,16 +14,16 @@ import { useCallback, useMemo, useEffect } from 'react'
 export function Login() {
   const navigate = useNavigate()
 
-  // const loginData = useMemo(() => {
-  //     return JSON.parse(localStorage.getItem('loginData'))
-  //   }, [])
+  const loginData = useMemo(() => {
+      return JSON.parse(localStorage.getItem('loginData'))
+    }, [])
   
-  //   useEffect(() => {
+    useEffect(() => {
       
-  //     if(loginData != null) {
-  //       navigate('/dashboard')
-  //     }
-  //   }, [navigate])
+      if(loginData != null) {
+        navigate('/dashboard')
+      }
+    }, [navigate])
 
   const onFinish = useCallback(
     (values) => {
